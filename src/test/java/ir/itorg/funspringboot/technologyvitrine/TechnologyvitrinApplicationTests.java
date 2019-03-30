@@ -1,4 +1,4 @@
-package ir.itorg.funspringboot.technologyvitrin;
+package ir.itorg.funspringboot.technologyvitrine;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

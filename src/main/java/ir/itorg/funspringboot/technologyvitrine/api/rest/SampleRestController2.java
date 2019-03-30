@@ -1,4 +1,4 @@
-package ir.itorg.funspringboot.technologyvitrin.api.rest;
+package ir.itorg.funspringboot.technologyvitrine.api.rest;
 
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import static ir.itorg.funspringboot.technologyvitrin.api.rest.SampleRestController2.SAMPLE_REST_DIR2;
+import static ir.itorg.funspringboot.technologyvitrine.api.rest.SampleRestController2.SAMPLE_REST_DIR2;
 
 
 @Controller

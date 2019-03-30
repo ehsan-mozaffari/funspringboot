@@ -1,12 +1,12 @@
-package ir.itorg.funspringboot.technologyvitrin;
+package ir.itorg.funspringboot.technologyvitrine;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TechnologyvitrinApplication {
+public class TechnologyVitrineApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TechnologyvitrinApplication.class, args);
+        SpringApplication.run(TechnologyVitrineApplication.class, args);
     }
 }

@@ -1,16 +1,15 @@
-package ir.itorg.funspringboot.technologyvitrin.api.rest;
+package ir.itorg.funspringboot.technologyvitrine.api.rest;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import static ir.itorg.funspringboot.technologyvitrin.api.rest.SampleRestController.SAMPLE_REST_DIR;
+import static ir.itorg.funspringboot.technologyvitrine.api.rest.SampleRestController.SAMPLE_REST_DIR;
 
 //@Controller //You don't need Controller hence @RestController is inherited from @Controller
 @RestController
