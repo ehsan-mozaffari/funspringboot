@@ -22,7 +22,7 @@ public class SampleCommunicatingWithRest {
     @RequestMapping(value = "get-quote",
             method = RequestMethod.GET)
     public String getQuote(){
-
+        //It solely doesn't need any annotation to run
         RestTemplate restTemplate = new RestTemplate();
         Quote quote = restTemplate.getForObject("http://gturnquist-quoters.cfapps.io/api/random", Quote.class);
 
