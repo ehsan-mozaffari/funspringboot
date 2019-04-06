@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 import static ir.itorg.funspringboot.technologyvitrine.api.rest.SampleRestController.SAMPLE_REST_DIR;
 
 //@Controller //You don't need Controller hence @RestController is inherited from @Controller
@@ -21,12 +23,14 @@ public class SampleRestController {
     public static final String SAMPLE_REST_DIR = "/sample-rest-controller";
     private static final String TEST_DIR = "test";
 
+    private final AtomicLong counter = new AtomicLong();
+
 
     @RequestMapping(value = "test",
             method = RequestMethod.GET)
     public String getTest(){
 
-        return "SampleRestController::getTest() is called.";
+        return counter.incrementAndGet() + "SampleRestController::getTest() is called.";
     }
 
     @RequestMapping(value = TEST_DIR + "/{name}", method = RequestMethod.GET)

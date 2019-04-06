@@ -24,6 +24,8 @@
         <junit.version>4.12</junit.version>
         <mockito.version>1.10.19</mockito.version>
         <slf4j.version>1.7.6</slf4j.version>
+        <!--<cassandra-driver.version>2.1.9</cassandra-driver.version>-->
+        <!--<spring.cassandra.version>2.0.0.M7</spring.cassandra.version>-->
     </properties>
 
     <dependencies>
@@ -110,14 +112,31 @@
             <!--<version>${mockito.version}</version>-->
             <!--<scope>test</scope>-->
         <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>slf4j-simple</artifactId>-->
-            <!--<version>${slf4j.version}</version>-->
-            <!--<scope>test</scope>-->
-        <!--</dependency>-->
+
+        <!--<dependency>
+            <groupId>com.datastax.cassandra</groupId>
+            <artifactId>cassandra-driver-core</artifactId>
+            <version>${cassandra-driver.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-cassandra</artifactId>
+            <version>${spring.cassandra.version}</version>
+        </dependency>-->
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/libs-milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <!--<dependencyManagement>-->
         <!--<dependencies>-->
